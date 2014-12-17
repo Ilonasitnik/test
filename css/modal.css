@@ -1,0 +1,91 @@
+
+ 
+
+
+ 
+ 
+
+ 
+ /*  <section>*/
+ 
+
+ 
+.block{
+ background:url(../Bild/block1.png) no-repeat; 
+   height:324px;
+   padding:0.3px 25px 25px 22px;
+   margin-bottom:23px;
+   
+   
+}
+#block2{
+ background:url(../Bild/block2.png) no-repeat;    
+   width:660px;
+   height:254px; 
+  padding:0.3px 25px 25px 22px;
+}
+#block3{
+ background:url(../Bild/block3.png) no-repeat;  
+   width:660px;
+   height:233px; 
+   padding:0.3px 25px 25px 22px;
+   margin-bottom:39px;
+}
+ 
+#block1 .photo{
+    float:left;
+    padding-right:38px;
+ 
+} 
+section .title{
+   font-family:fira_sansbook;
+   font-size:27px;
+   color:#3ba8c0;
+   
+}
+
+
+#block1 .inform{
+   font:bold 17px fira_sansmedium;
+   color:#555f67;
+ 
+} 
+
+ 
+ #block1{
+   font-family:fira_sansbook;
+   color:#555f67;
+   font-size:15px;
+} 
+ 
+ 
+ .photo2{
+    float:left;
+    padding-right:30px;
+    padding-left:60px;
+ 
+} 
+#block2 .data{
+    text-indent:130px;
+}
+
+#block2 p:nth-child(even){ 
+  font-family:fira_sansbook;
+   font-size:17px;
+   color:#6b747c;
+}
+
+
+#block3 p:nth-child(even){ 
+  font-family:fira_sansbook;
+   font-size:17px;
+   color:#6b747c;
+}
+#block3 .data{
+    text-indent:130px;
+}
+
+
+
+
+

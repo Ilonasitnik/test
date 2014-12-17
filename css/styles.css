@@ -1,16 +1,36 @@
-
-body{
-   width: 1400px;
-   height: 1117px;   
-   background: url(../Bild/background.png);  
-   margin:0;
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
+body{
+   background: url(../Bild/background.png) repeat scroll 0 0 rgba(0,0,0,0);  
+   margin:0;
+   min-height:100%;
+   
+}
+.container{
+   width:960px;
+   margin:0 auto 40px auto;
+   padding:0;
+}
+
+
   /* header */
 header{
   height: 119px;
   background: url(../Bild/header-logo.png) no-repeat;
   padding-right: 76px;
-  margin:0;
+  margin-bottom:40px;
   
 }
 ul li{
@@ -76,68 +96,106 @@ ul a.vk:hover{
  /* Header and*/
  
  
- 
-   /* nav1+nav2 */
-   a{
+ /*nav sidebar*/
+  a{
     text-decoration:none;
     display:block;
    }
+   
    nav{
    width: 250px;
-   height: 397px;  
-   margin:39px 0px 0px 178px;
    float:left;
+   margin:0;
+ 
+   }
+   
+   
+ .sidebar{
+     margin-bottom: 23px;
+     font-family:'fira_sansbook';
  }
-
- nav .menu li {
-   background:#eff3f7;
-   width: 250px;
-   height: 73px;  
- }
-  nav .kontakt li{
-   width: 250px;
-   height: 40px;    
+ nav ul{
+     margin: 0;
+     padding: 0;
+     
  }
  
-  nav .menu a{
-      
-  margin-left:27px;
-  line-height:72px;  
-  color: #959aa8;
+nav .menu li {
+   background:#eff3f7;
+   height: 73px;
+   width:250px;
+   margin:0;
+  padding: 0;
+  
+ 
  }
-
- .menu #num1{
+ nav .menu span.num3_2{
+     display: block;
+  padding: auto 10px; 
+   border-top: 2px solid #3ba8c0;   
+ } 
+  
+  
+ 
+ nav .menu a{
+  color: #959aa8;
+  line-height: 77px;
+  padding:0 10px;
+  text-indent:20px;
+ }
+ .menu .num1{
     background:#3ba8c0;
-    font-family:fira_sansbook;
+    
     font-size:23px;
    border-bottom: 2px solid #3ba8c0;
    border-radius:8px 8px  0 0 ;
   
  }
- .menu #num1 a{
+ .menu .num1 a{
      color:#ffffff;
+     
+     
  }
  
-  .menu #num2{
-   font-family:MyriadProRegular;
+  .menu .num2{
+ 
    font-size:21px;
-   border-bottom: 2px solid #3ba8c0;
+ 
  }
-   .menu #num3{
-   font-family:firasans-book;
+   .menu .num3{
+  
    font-size:21px;
     border-radius: 0 0 8px 8px ;
  }
-
- nav .kontakt{
- height: 397px; 
- display: block;
-font-family:firasans-book;
- }
  
-  nav .kontakt a{
-  margin-left:86px;
- line-height:40px;  
+ nav .sidebar a[href*=html]:hover{
+  color:#3ba8c0;   
+     
+ }
+ /*nav kontact*/
+ 
+ 
+  nav .kontakt li{
+   height: 40px; 
+   
+ }
+  nav .kontakt p{
+    text-indent:30px;
+     line-height: 40px;
+     color:#fff;
+ }
+  
+  nav .kontakt li a{
+   height: 40px; 
+   text-indent:80px;
+   line-height: 40px;
+ }
+  nav .kontakt{
+ display: block;
+ font-family:'fira_sansbook';
+
+ }
+ nav .kontakt a,nav .kontakt {
  color: #ffffff;
  
  }
@@ -145,126 +203,145 @@ font-family:firasans-book;
   text-decoration:underline;
   color:#ffffff;  
  }
- nav .menu a:hover{  
-  color:#3ba8c0;  
- }
-
- .kontakt #num{
-     background:#3ba8c0;
-     border-radius:8px 8px 0 0  ;
-       font-size:21px;
- }
- 
-  .kontakt #email{
+ .kontakt .email{
     background:url(../Bild/post.png) no-repeat;
-       font-size:17px;
+    font-size:17px;
  }
  
  
-  .kontakt #call{
+  .kontakt .call{
      background:url(../Bild/tel.png) no-repeat;
-      font-size:17px;
+     font-size:17px;
  }
  
-   .kontakt #sk{
+   .kontakt .sk{
   background:url(../Bild/sk.png) no-repeat;
    font-size:17px;
    border-radius:0 0 8px 8px ;
  }
- 
- 
- 
- 
- 
- 
+ .kontakt p{
+     background:#3ba8c0;
+     border-radius:8px 8px 0 0  ;
+     font-size:21px;
+     height: 40px;
+ }
  
  /*  <section>*/
  
- section{
+  section{
    width: 650px;
-   height: 840px;  
-   margin:55px 220px 39px 530px;
+   margin-left:310px;
 }
- 
-#block1{
- background:url(../Bild/block1.png) no-repeat;  
-   width:660px;
-   height:324px;
-   padding:0.3px 25px 25px 22px;
-   margin-bottom:23px;
-   
-   
-}
-#block2{
- background:url(../Bild/block2.png) no-repeat;    
-   width:660px;
-   height:254px; 
-  padding:0.3px 25px 25px 22px;
-}
-#block3{
- background:url(../Bild/block3.png) no-repeat;  
-   width:660px;
-   height:233px; 
-   padding:0.3px 25px 25px 22px;
-   margin-bottom:39px;
-}
- 
-#block1 .photo{
+
+section div.block .foto{
+    height: 160px;
+    width: 160px;
+    border:4px solid #31A6BD;
+    border-radius:50%;  
     float:left;
-    padding-right:38px;
- 
+    margin: 0 36px 40px 18px;
+    display: block;
+     margin-top: 20px;
+}
+
+section div.block{
+
+  background: none repeat scroll 0 0 #eff3f7;  
+  border:1px solid #EFF3F7;
+  border-radius: 4px;
+  padding: 20px 18px 23px 0px;
+  margin-bottom:23px;
 } 
-section .title{
-   font-family:fira_sansbook;
-   font-size:27px;
-   color:#3ba8c0;
+ 
+
+.block h2 {
    
+    color: #3ba8c0;
+    border-bottom: 2px solid #3ba8c0;
+    font-family:'fira_sansbook';
+    font-size: 27px;
+    width: 55%;
+    text-indent: 20px;
+    vertical-align: text-top;
+    padding-bottom: 20px;
+}
+.info{
+    padding: 0 0;
+    margin-top: 20px;
+     line-height: 37px;
+    
+}
+
+.info .inform{
+        font-family: 'fira_sansmedium';
+         color: #4a545d;
+          font-size: 17px;
+           margin-right: 8px;
+           
+}
+.info p{
+     color: #37424d;
+     font-family:'fira_sansbook';
+    font-size: 15px;
+}
+.infoskills{
+  float: left;
+  padding-right: 10px;
+}
+  
+
+.skill{
+  padding: 2px 15px;
+  font-family: proxima_nova_condensedSBd;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 2px;
+  background-image:linear-gradient(#3BA8C0,#39A4BB);
+  line-height: 25px;
+}
+ 
+.experience li{
+    list-style-image:url(../Bild/case.png);
+    line-height:0px;
+    padding: 0 0;
+    margin: 0 0;
+    
+}
+.block ul  {
+list-style-type:none;
+vertical-align:top;
+margin-left: 120px;
+margin-top: 40px;
+
+}
+
+.block h3{
+ color: #4a545d;
+ line-height:0; 
+ font-family: 'fira_sansbook';
+ font-size: 17px;
+ padding-left: 20px;
 }
 
 
-#block1 .inform{
-   font:bold 17px fira_sansmedium;
-   color:#555f67;
- 
-} 
-
- 
- #block1{
-   font-family:fira_sansbook;
-   color:#555f67;
-   font-size:15px;
-} 
- 
- 
- .photo2{
-    float:left;
-    padding-right:30px;
-    padding-left:60px;
- 
-} 
-#block2 .data{
-    text-indent:130px;
+li p{
+    font-family: 'fira_sanslight';
+    color: #687078;
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 37px;
 }
+ 
 
-#block2 p:nth-child(even){ 
-  font-family:fira_sansbook;
-   font-size:17px;
-   color:#6b747c;
+
+.education .university{
+list-style-image:url(../Bild/list.png);
 }
 
 
-#block3 p:nth-child(even){ 
-  font-family:fira_sansbook;
-   font-size:17px;
-   color:#6b747c;
+.education .courses{
+list-style-image:url(../Bild/course.png);
 }
-#block3 .data{
-    text-indent:130px;
-}
-
-
-
-
 
 
 /*footer*/
