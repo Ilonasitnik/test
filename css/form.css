@@ -1,21 +1,40 @@
-
-
-body{
-   width: 1400px;
-   height: 1117px;   
-   background: url(../Bild/background.png);  
-   margin:0;
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
+body{
+   background: url(../Bild/background.png) repeat scroll 0 0 rgba(0,0,0,0);  
+   margin:0;
+   min-height:100%;
+   
+}
+.container{
+   width:960px;
+   margin:0 auto 40px auto;
+   padding:0;
+}
+
+
   /* header */
 header{
-   height: 119px;
-   background: url(../Bild/header-logo.png) no-repeat;
-   padding-right: 76px;
-   margin:0;
+  height: 119px;
+  background: url(../Bild/header-logo.png) no-repeat;
+  padding-right: 76px;
+  margin-bottom:40px;
   
 }
 ul li{
-   list-style-type:none;
+    list-style-type:none;
 }
 header ul{
     padding-top:34.5px; 
@@ -27,249 +46,307 @@ header a{
     padding-right:24px;
 }
 ul a.vk:hover{
-    display: block;
-    background:url(../Bild/vk-hover.png) no-repeat;
+ display: block;
+ background:url(../Bild/vk-hover.png) no-repeat;
  }
  
  
-ul a.vk{
-    display: block;
-    background:url(../Bild/vk.png) no-repeat;
+ ul a.vk{
+ display: block;
+ background:url(../Bild/vk.png) no-repeat;
  }
-a img{
-     border:none;
- }
- 
-ul a.tw:hover{
-     display: block;
-     background:url(../Bild/tw-hover.png) no-repeat;
+ a img{
+ border:none;
  }
  
- 
-ul a.tw{
-    display: block;
-    background:url(../Bild/tw.png) no-repeat;
+ ul a.tw:hover{
+ display: block;
+ background:url(../Bild/tw-hover.png) no-repeat;
  }
  
  
-ul a.face:hover{
-    display: block;
-    background:url(../Bild/facebook-hover.png) no-repeat;
+ ul a.tw{
+ display: block;
+ background:url(../Bild/tw.png) no-repeat;
  }
  
  
-ul a.face{
-   display: block;
-   background:url(../Bild/facebook.png) no-repeat;
+ ul a.face:hover{
+ display: block;
+ background:url(../Bild/facebook-hover.png) no-repeat;
+ }
+ 
+ 
+ ul a.face{
+ display: block;
+ background:url(../Bild/facebook.png) no-repeat;
  } 
  
-ul a.gt:hover{
-   display: block;
-   background:url(../Bild/gihtub-hover.png) no-repeat;
+  ul a.gt:hover{
+ display: block;
+ background:url(../Bild/gihtub-hover.png) no-repeat;
  }
  
  
-ul a.gt{
-   display: block;
-   background:url(../Bild/gihtub.png) no-repeat;
+ ul a.gt{
+ display: block;
+ background:url(../Bild/gihtub.png) no-repeat;
  } 
  
  /* Header and*/
  
  
- 
-   /* nav1+nav2 */
-a{
+ /*nav sidebar*/
+  a{
     text-decoration:none;
     display:block;
+   }
+   
+   nav{
+   width: 250px;
+   float:left;
+   margin:0;
+ 
+   }
+   
+   
+ .sidebar{
+     margin-bottom: 23px;
+     font-family:'fira_sansbook';
  }
-nav{
-    width: 250px;
-    height: 397px;  
-    margin:39px 0px 0px 178px;
-    float:left;
+ nav ul{
+     margin: 0;
+     padding: 0;
+     
  }
-
+ 
 nav .menu li {
-    background:#eff3f7;
-    width: 250px;
-    height: 73px;  
- }
-nav .kontakt li{
-    width: 250px;
-    height: 40px;    
- }  
+   background:#eff3f7;
+   height: 73px;
+   width:250px;
+   margin:0;
+  padding: 0;
+   font-size: 23px;
+  
  
-nav .menu a{
-    margin-left:27px;
-    line-height:72px;  
-    color: #959aa8;
  }
-.menu #num1{ 
-    font-family:fira_sansbook;
+ nav .menu span.num2_2{
+  display: block;
+  padding: auto 10px; 
+  border-top: 2px solid #3ba8c0; 
+ 
+ } 
+ .num3_2{
+      color:#fff;
+ }
+  
+  
+ 
+ nav .menu a{
+  color: #959aa8;
+  line-height: 77px;
+  padding:0 10px;
+  text-indent:20px;
+ }
+ .menu .num3{
+    background:#3ba8c0; 
     font-size:23px;
-    border-bottom: 2px solid #3ba8c0;
-    border-radius:8px 8px  0 0 ;
+   border-bottom: 2px solid #3ba8c0;
+   border-radius:8px 8px  0 0 ;
+  
  }
- 
 
-.menu #num3 a{
-    color:#ffffff;
- }
  
-.menu #num2{
-    font-family:MyriadProRegular;
-    font-size:21px;
-    border-bottom: 2px solid #3ba8c0;
+  .menu .num2{
+ 
+   font-size:21px;
+ 
  }
-.menu #num3{
-    background:#3ba8c0;
-    font-family:firasans-book;
-    font-size:21px;
+   .menu .num3{
+  
+   font-size:21px;
     border-radius: 0 0 8px 8px ;
  }
+ 
+ nav .sidebar a[href*=html]:hover{
+  color:#3ba8c0;   
+     
+ }
+ /*nav kontact*/
+ 
+ 
+  nav .kontakt li{
+   height: 40px; 
+   
+ }
+  nav .kontakt p{
+    text-indent:30px;
+     line-height: 40px;
+     color:#fff;
+ }
+  
+  nav .kontakt li a{
+   height: 40px; 
+   text-indent:80px;
+   line-height: 40px;
+ }
+  nav .kontakt{
+ display: block;
+ font-family:'fira_sansbook';
 
-nav .kontakt{
-    height: 397px; 
-    display: block;
-    font-family:firasans-book;
  }
- 
-nav .kontakt a{
-    margin-left:86px;
-    line-height:40px;  
-    color: #ffffff;
+ nav .kontakt a,nav .kontakt {
+ color: #ffffff;
  
  }
-nav .kontakt a:hover{  
-    text-decoration:underline;
-    color:#ffffff;  
+ nav .kontakt a:hover{  
+  text-decoration:underline;
+  color:#ffffff;  
  }
-nav .menu a:hover{  
-    color:#3ba8c0;  
- }
-
-.kontakt #num{
-    background:#3ba8c0;
-    border-radius:8px 8px 0 0  ;
-    font-size:21px;
- }
- 
-.kontakt #email{
+ .kontakt .post{
     background:url(../Bild/post.png) no-repeat;
     font-size:17px;
  }
  
-  .kontakt #call{
-    background:url(../Bild/tel.png) no-repeat;
-    font-size:17px;
+ 
+  .kontakt .call{
+     background:url(../Bild/tel.png) no-repeat;
+     font-size:17px;
  }
  
- .kontakt #sk{
-    background:url(../Bild/sk.png) no-repeat;
-    font-size:17px;
-    border-radius:0 0 8px 8px ;
+   .kontakt .sk{
+  background:url(../Bild/sk.png) no-repeat;
+   font-size:17px;
+   border-radius:0 0 8px 8px ;
  }
- 
- 
- 
- 
- 
+ .kontakt p{
+     background:#3ba8c0;
+     border-radius:8px 8px 0 0  ;
+     font-size:21px;
+     height: 40px;
+ }
+
+  
 
  
  
  
- 
+  
  /* fieldset input*/
  
  
  fieldset{
-    width: 652px;
-    height: 840px;   
+   
     background: #eff3f7;
-    margin-left: 530px;
-    margin-top: 55px;
+    margin-left: 306px;
     border: none;
-    padding: 0;
     border-radius: 4px;
+    padding-bottom: 193px;
+  
+ }
+ .streamer{
+   background: none repeat scroll 0 0 #48cbe8;
+    border-bottom: 17px solid #67dffa;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 137px;  
+    margin-bottom:40px;
  }
  
-fieldset .input li{
-    float:left;    
-    margin-right: 25px;
- }
  
-input[type="text"],input[type="password"]{
+ .streamer p{
+   
+    color: #fff;
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    line-height: 120px;
+    text-align: center;
+ }
+ input[type="text"],input[type="email"]{
     width: 190px;
     height: 40px; 
-    border:2px solid #48cbe8;
+    border:1px solid #48cbe8;
     border-radius: 4px;
  }
- 
-.input p{
-    line-height:27px;  
-     
+ .form p{
+    color: #959aa8;
+    font-family: "fira_sanslight";
+    font-size: 19px;
+ }
+ .form{
+     width: 400px;
+     margin: 0px auto; 
  }
  
-.input{
-    margin-left:80px;
+ .information .info1{
+   float: left;
+  margin-bottom: 17px;
  }
- 
-input[type="password"]{
-    margin-right: 80px;
+ .information .info2{
+   float:right;
+  margin-bottom: 17px;
  }
 
-   
-   
-.textarea p{
-    line-height:0px;
-    display: block;
-    margin-left:121px;
-    margin-top:146px;
- } 
-   
-textarea {
-    width:406px;
+ textarea {
+    width:395px;
     height:181px; 
-    margin-left:121px;
     border-radius: 4px;
-    border:2px solid #48cbe8;
+    border:1px solid #48cbe8;
+    margin-bottom:17px;
+  }
+
+ 
+  input.capcha{
+      display: block;
+        width: 191px;
+    height: 73px;
+    float: left; 
+    margin-right:0px;
+    margin-top: 4px;
+     border-radius: 4px;
+    border:1px solid #48cbe8;
+     
+   
   }
   
-.button li{
-    float:left;
-}
+ input.colum{
+   float: right; 
+   margin-top: 20px;
+       
+  }
+ 
+ 
+ 
+  .pressbutton{
+      margin-top: 111px;
+  }
+ 
 
-.button input{
+ 
+.button2 input {
+    font-size: 19px;
+    font-family:'fira_sansbook';
+    color: #fff;
     width:139px;
     height: 33px;
-    border-radius: 8px;
-    border-bottom:2px solid #687b8f;
-    margin-left:100px;
+    border-radius: 4px;
+    border-bottom:1px solid #687b8f;
     background-color:#849db5;
+    float: right;
 }
-.button input[type="submit"]{
+
+.button1 input{
+    font-size: 19px;
+    font-family:'fira_sansbook';
+    color: #fff;
+    width:139px;
+    height: 33px;
+    border-radius: 4px;
     background-color:#48cbe8;
-    border-bottom:2px solid #3ba8c0 ;
+    border-bottom:1px solid #3ba8c0 ;
+    float: left;
 }
    
-   
-   
-  
-   
-   
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
    
   /*footer*/
