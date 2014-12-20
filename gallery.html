@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <link rel='stylesheet' href='css/gallery.css'>
         <link rel='stylesheet' href='css/fonts.css'>
+         <link rel='stylesheet' href='css/modal.css'>
         <link rel="shortcut icon" href="Bild/ico/briefcase.ico" type="image/icon">
     </head>
     
@@ -25,9 +26,9 @@
              <nav>
                  <div class="sidebar">
                       <ul class="menu"> 
-                         <li class="num1"><a href="#" class="main"><span class="num1_2">Обо мне</span></a></li>
-                         <li class="num2"><a href="file:///C:/server1/home/lona.dev/www/gallery.html" class="bookmark"><span class="num2_2"> Мои работы</span></a></li>
-                         <li class="num3"><a href="file:///C:/server1/home/lona.dev/www/form.html" class="forma"><span class="num3_2">Связаться со мной</span></a></li>
+                         <li class="num1"><a href="file:///c:/server1/home/git.dev/www/index.html" class="main"><span class="num1_2">Обо мне</span></a></li>
+                         <li class="num2"><a href="#" class="bookmark"><span class="num2_2"> Мои работы</span></a></li>
+                         <li class="num3"><a href="file:///c:/server1/home/git.dev/www/form.html" class="forma"><span class="num3_2">Связаться со мной</span></a></li>
                       </ul>
                 </div>
                  <div class="kontact">
@@ -110,7 +111,7 @@
                     <p>1превью 2строки</p> 
                 </div>
                   <div class="neuproject">
-                      <p><img src="Bild/neuproject.png"></p>
+                      <p> <a href="#blockmodal"><img src="Bild/neuproject.png"></a></p>
                       <p> Добавить проект</p>
                     
                     
@@ -123,9 +124,39 @@
         <footer>
             
         </footer>
-        
-        
+            <a href="#x" class="overlay" id="blockmodal"> </a>
+       <div  class="block">
+            <div class="modalheader">
+                    <p>Добавление проекта</p>
+                    <span class="close"> </span>
+            </div>
+       
+            <div class="neumodal">
+                <div>   
+                    <p> <label class="name">Название проекта</label></p>
+                    <input type="text"  placeholder="Введите название"  maxlength="30">
+                </div>
+                <div> 
+                 <p><label  class="bild"> Картинка </label></p>
+                   <input  class="file_input_text" readonly="" placeholder="Загрузите изображение" name="mod_img_text">
+                  <div class="file_input_box"><input class="file_input" type="file" required="" ></div>
+                </div>
+                 <div>
+                     <p> <label  class="adress"> URL проекта </label></p>
+                  <input type="text"  placeholder="Добавьте ссылку"  maxlength="30">
+                 </div>
+                
+                  <div>
+                       <p> <label  class="description"> Описание</label> </p>
+                  <textarea placeholder="Пара слов о Вашем проекте" name="text"></textarea>
+                  </div>
+              
+                <p><input type="button" value="Добавить"></p>
+                
+            </div>
         </div>
+ 
+        
     </body>
     
 </html>

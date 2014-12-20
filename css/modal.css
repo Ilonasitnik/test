@@ -1,91 +1,162 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
 
- 
-
-
- 
- 
-
- 
- /*  <section>*/
- 
-
- 
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
 .block{
- background:url(../Bild/block1.png) no-repeat; 
-   height:324px;
-   padding:0.3px 25px 25px 22px;
-   margin-bottom:23px;
+    display: block;
+    width: 357px;
+    height: 481px;
+     background-color: #eff3f7;
+    border-radius: 5px;
+    opacity: 1;
+    top:50%;
+    left: 50%;
+    visibility: visible;
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+  visibility: hidden;
+  
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.overlay:target+.block {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.modalheader p{
+    display: block;
+    background-color: #48cbe8;
+    border-bottom: 9px solid #67dffa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    font-family: 'fira_sansregular';
+    font-size: 25px;
+   text-indent:10px;
+
+}
+
+.modalheader .close{
+    
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url(../Bild/close.png) no-repeat;
+    top:10px;
+    right: 18px;
+}
+
+.neumodal {
+    color: #959aa8;
+    margin-bottom: 10px;
+    margin-left: 21px;
+    margin-top: 5px;
+}
+
+input,textarea{
+    color: #5acee9;
+    font-family: "fira_sanslight";
+    font-size: 13px;
+    text-indent: 5px;
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    display: block;
+    height: 39px;
+    margin-top: 3px;
+    width: 320px;
+}
+textarea {
+    min-height: 111px;
+    min-width: 320px;
+    overflow: hidden;
+    resize: none;
+}
+input[type*="button"]{
+    background-color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #3ba8c0;
+    color: #fff;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    height: 31px;
+    margin-left: 85px;
+    margin-top: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 137px;
+}
+input.file_input{
+  
+    cursor: pointer;
+    opacity: 0;
    
+    width: 51px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 41px;
    
-}
-#block2{
- background:url(../Bild/block2.png) no-repeat;    
-   width:660px;
-   height:254px; 
-  padding:0.3px 25px 25px 22px;
-}
-#block3{
- background:url(../Bild/block3.png) no-repeat;  
-   width:660px;
-   height:233px; 
-   padding:0.3px 25px 25px 22px;
-   margin-bottom:39px;
-}
- 
-#block1 .photo{
-    float:left;
-    padding-right:38px;
- 
-} 
-section .title{
-   font-family:fira_sansbook;
-   font-size:27px;
-   color:#3ba8c0;
+    position: absolute;
    
+    margin-top:0px;
 }
 
-
-#block1 .inform{
-   font:bold 17px fira_sansmedium;
-   color:#555f67;
- 
-} 
-
- 
- #block1{
-   font-family:fira_sansbook;
-   color:#555f67;
-   font-size:15px;
-} 
- 
- 
- .photo2{
-    float:left;
-    padding-right:30px;
-    padding-left:60px;
- 
-} 
-#block2 .data{
-    text-indent:130px;
+.file_input_text{
+     width: 265px; 
 }
-
-#block2 p:nth-child(even){ 
-  font-family:fira_sansbook;
-   font-size:17px;
-   color:#6b747c;
+.file_input_box {
+    background-color:#48CBE8;
+    background:url(../Bild/cloud.png)no-repeat scroll 50% 50% #48cbe8;
+    border: 1px solid #48cbe8;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    height: 41px;
+    left: 290px;
+    position: absolute;
+    top: 141px;
+    width: 53px;
 }
-
-
-#block3 p:nth-child(even){ 
-  font-family:fira_sansbook;
-   font-size:17px;
-   color:#6b747c;
-}
-#block3 .data{
-    text-indent:130px;
-}
-
-
-
-
-
